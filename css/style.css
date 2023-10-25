@@ -1,0 +1,14 @@
+/* CAROSELLO */
+.carousel-item{
+    height: 10rem;
+    position: relative;
+}
+
+.carousel-item img{
+    height: 10rem;
+    min-width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
