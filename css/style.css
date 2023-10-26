@@ -25,9 +25,9 @@ nav .navbar-toggler{
 /* ****Per effetto sottolineatura al passaggio del mouse su uno dei link navbar e per tenere gruppo link a dx (solo >992px)*** */
 
 @media (min-width:992px) {
-    .container-fluid{
+    .collapse.navbar-collapse{
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
     }
 
     .navbar-nav a {
