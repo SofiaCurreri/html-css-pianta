@@ -22,26 +22,35 @@ nav .navbar-toggler{
     background-color: #f8f9fa;
 }
 
-/* ****Per effetto sottolineatura al passaggio del mouse su uno dei link navbar*** */
-.navbar-nav a {
-position: relative;
+/* ****Per effetto sottolineatura al passaggio del mouse su uno dei link navbar e per tenere gruppo link a dx (solo >992px)*** */
 
+@media (min-width:992px) {
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-nav a {
+        position: relative;
+        
+        }
+        
+        .navbar-nav a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f8f9fa;
+        transition: width 0.3s;
+        }
+        
+        .navbar-nav a:hover::after {
+        width: 100%;
+        }
 }
 
-.navbar-nav a::after {
-content: "";
-position: absolute;
-width: 0;
-height: 2px;
-bottom: 0;
-left: 0;
-background-color: #f8f9fa;
-transition: width 0.3s;
-}
-
-.navbar-nav a:hover::after {
-width: 100%;
-}
 /* ********************************************************************************** */
 
 /* CAROSELLO */
