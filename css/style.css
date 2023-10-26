@@ -54,6 +54,10 @@ nav .navbar-toggler{
 /* **************************************************************************************************************************** */
 
 /* CAROSELLO */
+.margin-top-carosello{
+    margin-top: 4rem;
+}
+
 .carousel-item{
     height: 30rem;
     position: relative;
