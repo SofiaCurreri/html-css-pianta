@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -188,6 +189,38 @@
       
       <hr class="margin-content">
 
+      <!-- Countdown al prossimo Hanami -->
+      <div id="contenitore-contatore" class="margin-content d-flex flex-column align-items-center">    
+
+        <h3 class="mb-4 fw-semibold">Ecco quanto manca al prossimo Hanami :</h3>
+
+        <div class="panel">
+  
+          <div class="contatore d-flex">
+              <div class="counter-block">
+                  <div id="giorni" class="counter-block-number"></div>
+                  <div class="counter-block-label">Giorni</div>
+              </div>
+              <div class="counter-block mx-3">
+                  <div id="ore" class="counter-block-number"></div>
+                  <div class="counter-block-label">Ore</div>
+              </div>
+              <div class="counter-block">
+                  <div id="minuti" class="counter-block-number"></div>
+                  <div class="counter-block-label">Minuti</div>
+              </div>
+              <div class="counter-block mx-3">
+                  <div id="secondi" class="counter-block-number"></div>
+                  <div class="counter-block-label">Secondi</div>
+              </div>
+          </div>
+  
+        </div>
+  
+        <!-- Messaggio di countdown completato che compare quando è la data X -->
+        <h4 id="contatore" class="text-center"></h4>
+      </div>
+
     </div>
 
   </main>
@@ -211,5 +244,7 @@
 
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="./js/script.js"></script>
+
 </body>
 </html>
