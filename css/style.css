@@ -1,6 +1,11 @@
 /* BODY */
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #282727;
+}
+
+body p{
+    font-size: 1.5rem;
 }
 
 /* CAROSELLO */
@@ -32,24 +37,14 @@ body{
     z-index: 1; 
 }
 
-h1{
-    font-size: 3.5rem;
-    font-weight: 900;
-}
 
-/* ICONE CARATTERISTICHE PRINCIPALI */
+/* SEZIONE ICONE CARATTERISTICHE PRINCIPALI */
 #icons-features img{
     width: 10rem;
 }
 
-/* RIQUADRO SOTTO CAROSELLO */
-#flower-detail{
-    background-color: whitesmoke;
+/* SEZIONE CONTENUTI PRINCIPALI */
+.margin-content{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
-
-/* @media(max-width:576px){
-    #flower-detail{
-        height: 10rem;
-        width: 20rem;
-    }
-} */
