@@ -51,7 +51,7 @@ nav .navbar-toggler{
         }
 }
 
-/* ********************************************************************************** */
+/* **************************************************************************************************************************** */
 
 /* CAROSELLO */
 .carousel-item{
@@ -94,6 +94,43 @@ nav .navbar-toggler{
     margin-bottom: 5rem;
 }
 
+/* STILE PER IL COUNTDOWN */
+#contenitore-contatore {
+    line-height: 1;
+
+    display: flex;
+    justify-content: center;  
+}
+
+.panel {
+    background-color: #8f0070;
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter-block {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.counter-block:last-child {
+    color: #F2AD41;
+}
+
+.counter-block-number {
+    font-size: 48px;
+}
+
+.counter-block-label {
+    font-size: 20px;
+}
+
 /* FOOTER */
 #footer-box{
     height: 100%;
@@ -103,3 +140,4 @@ nav .navbar-toggler{
 footer p{
     margin-bottom: 0;
 }
+
