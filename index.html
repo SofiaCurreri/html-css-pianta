@@ -10,46 +10,76 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <main>
-       
+
       <!-- Carosello -->
-      <div id="myCarousel" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <img src="./img/slide-1.jpg" class="d-block w-100" alt="ciliegio-1">
-            </div>
-            <div class="carousel-item active">
-              <img src="./img/slide-2.jpg" class="d-block w-100" alt="ciliegio-2">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/slide-3.jpg" class="d-block w-100" alt="ciliegio-3">
-            </div>
-            
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-       
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="./img/slide-1.jpg" class="d-block w-100" alt="ciliegio-1">
+          </div>
+          <div class="carousel-item active">
+            <img src="./img/slide-2.jpg" class="d-block w-100" alt="ciliegio-2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slide-3.jpg" class="d-block w-100" alt="ciliegio-3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="container mt-5">
+
+        <!-- Titolo -->
+        <div class="d-flex justify-content-center slign-items-center">
+          <h1 class="mt-5 mb-3 text-center">Il Ciliegio dell' Hanami</h1> 
+          <!-- <img class="img-ciliegio" src="./img/img-fiore.png" alt="fiore-di-ciliegio"> -->
+        </div>
+        
+        <h2 class="fst-italic text-center fw-semibold"> "Prunus x yedonensis" </h2>
+
+        <!-- Riquadro -->
+        <div class="row d-flex justify-content-center my-5">
+          <div class="col-sm-10 col-md-10 col-lg-8 col-xl-9 rounded shadow-lg p-3" id="flower-detail">
+            <div class="row">
+              <div class="col-12">
+                Sin dai due secoli antecedenti l'anno Mille, in Giappone viene celebrata una ricorrenza in cui il fiore di ciliegio fa da unico grande protagonista. Stiamo parlando dell'Hanami, ossia la festa che celebra il rito dell'osservazione dei fiori. Malgrado il suo significato letterale, questa si riferisce interamente ai fiori di ciliegio, la cui fioritura avviene nel periodo di Aprile.
+                Il simbolismo legato ai fiori di ciliegio deve molto a questa ricorrenza e al valore che rappresenta per i giapponesi. L'idea di rinascita e buon auspicio rappresentata dalla fioritura viene infatti associata ad un periodo importante come Aprile, momento in cui l'anno scolastico termina e molti studenti giapponesi lasciano la scuola per entrare nel mondo dell'università e del lavoro.             
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
     </main>
 
-    
-    
-    
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
