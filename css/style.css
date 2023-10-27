@@ -22,7 +22,7 @@ nav .navbar-toggler{
     background-color: #f8f9fa;
 }
 
-/* ****Per effetto sottolineatura al passaggio del mouse su uno dei link navbar e per tenere gruppo link a dx (solo >992px)*** */
+/* ****Per effetto sottolineatura al passaggio del mouse sui link navbar e per tenere gruppo link a dx (solo >992px, ovvero quando toggle non attivo)*** */
 
 @media (min-width:992px) {
     .collapse.navbar-collapse{
@@ -35,7 +35,7 @@ nav .navbar-toggler{
         
         }
         
-        .navbar-nav a::after {
+    .navbar-nav a::after {
         content: "";
         position: absolute;
         width: 0;
@@ -44,16 +44,18 @@ nav .navbar-toggler{
         left: 0;
         background-color: #f8f9fa;
         transition: width 0.3s;
-        }
-        
-        .navbar-nav a:hover::after {
+    }
+    
+    .navbar-nav a:hover::after {
         width: 100%;
-        }
+    }
 }
 
-/* **************************************************************************************************************************** */
+/* **********************************************************************************************************************************************************/
 
-/* CAROSELLO */
+/* MAIN */
+
+/* Carosello */
 .margin-top-carosello{
     margin-top: 4rem;
 }
@@ -87,12 +89,12 @@ nav .navbar-toggler{
 }
 
 
-/* SEZIONE ICONE CARATTERISTICHE PRINCIPALI */
+/* Sezione icone caratteristiche principali */
 #icons-features img{
     width: 10rem;
 }
 
-/* SEZIONE CONTENUTI PRINCIPALI */
+/* Sezione contenuti prinicipali */
 .margin-content{
     margin-top: 5rem;
     margin-bottom: 5rem;
