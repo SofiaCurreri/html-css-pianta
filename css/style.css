@@ -22,13 +22,13 @@ nav .navbar-toggler{
     background-color: #f8f9fa;
 }
 
-/* ****Per effetto sottolineatura al passaggio del mouse sui link navbar e per tenere gruppo link a dx (solo >992px, ovvero quando toggle non attivo)*** */
+.navbar-collapse{
+    flex-grow:0;
+}
+
+/* ****Per effetto sottolineatura al passaggio del mouse sui link navbar (solo >992px, ovvero quando toggle non attivo)*** */
 
 @media (min-width:992px) {
-    .collapse.navbar-collapse{
-        display: flex;
-        justify-content: end;
-    }
 
     .navbar-nav a {
         position: relative;
